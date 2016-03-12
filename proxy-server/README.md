@@ -12,7 +12,6 @@ Completed:
 * [] Required: The destination server is configurable via the `x-destination-url` header
 * [] Required: Client requests and respones are printed to stdout
 * [] Required: The `--logfile` argument outputs all logs to the file specified instead of stdout
-* [] Optional: Supports HTTPS
 * [] Optional: `-h` argument prints CLI API
 
 Walkthrough Gif:
