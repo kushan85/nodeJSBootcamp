@@ -1,6 +1,21 @@
 var http = require('http')
 var request = require('request')
-var argv = require('yargs').argv
+var argv = require('yargs')
+	.usage('Usage: node ./index.js [options]')
+	.alias('p', 'port')
+	.alias('x', 'host')
+	// .alias('e', 'exec')
+	.alias('l', 'log')
+	.describe('p', 'Specify a forwarding port')
+	.describe('x', 'Specify a forwarding host')
+	// .describe('e', 'Specify a process to proxy instead')
+	.describe('l', 'Specify a output log file')
+	.help('h')
+    .alias('h', 'help')
+    .epilog('Special thanks to CodePath and Walmartlabs\ncopyright 2015')
+  	.example('node index.js -p 8001 -h google.com')
+   	.argv;
+
 var fs = require('fs')
 var path = require('path')
 
