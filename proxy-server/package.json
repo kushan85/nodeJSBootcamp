@@ -1,0 +1,17 @@
+{
+  "name": "proxyserver",
+  "version": "1.0.0",
+  "description": "Node JS Bootcamp - Proxy Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Kushan Shah",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.69.0",
+    "yargs": "^3.32.0"
+  },
+  "devDependencies": {}
+}
